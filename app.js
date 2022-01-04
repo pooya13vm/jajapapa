@@ -31,7 +31,9 @@ const cards = document.querySelectorAll(".edu-img")
 window.addEventListener('load', function() {
     if(document.cookie){
         document.querySelector(".modal-overlay-edu").style.display = "none"
-        personalTitle.innerHTML = `Hi ${document.cookie}`
+        let myCookie = document.cookie
+        let name = myCookie.slice(5,myCookie.length)
+        personalTitle.innerHTML = `Hi ${name}`
     } 
 });
 
@@ -43,7 +45,7 @@ form.addEventListener("submit",function(e){
     if(inputCode == accessCode || document.cookie){
         document.querySelector(".modal-overlay").style.display = "none"
         personalTitle.innerHTML = `Hi ${inputName}`
-        document.cookie = `${inputName}`
+        document.cookie = `name=${inputName};Secure`
         console.log(document.cookie)
     }else{
         message.style.display = "block"
