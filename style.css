@@ -1,62 +1,62 @@
 .selector-for-some-widget {
-    box-sizing: content-box;
-  }
-.navbar-collapse{
+  box-sizing: content-box;
+}
+.navbar-collapse {
   flex-grow: unset !important;
 }
-.font{
-  font-family: 'Bubblegum Sans', cursive;
+.font {
+  font-family: "Bubblegum Sans", cursive;
 }
-.main{
+.main {
   background-image: url(./images/101-1017513_back-gallery-for-children-wallpaper-background-childrens-day.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
- overflow: hidden;
+  overflow: hidden;
   resize: both;
   height: 100vh;
 }
-nav .active{
-  color: #F3A739 !important;
+nav .active {
+  color: #f3a739 !important;
   font-weight: bold;
   padding: 5px;
-  border: solid 1px #F3A739 ;
+  border: solid 1px #f3a739;
   border-radius: 5px;
 }
 nav {
   background-color: rgba(66, 71, 139, 0.6) !important;
   z-index: 1000;
 }
-h1{
+h1 {
   font-size: 3.3rem;
 }
 p {
   margin: 0 !important;
 }
-.pro-img{
+.pro-img {
   border-radius: 50%;
   width: 25rem;
-  border: 2rem solid #9DF7F8;
+  border: 2rem solid #9df7f8;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: max-content;
 }
-nav .navbar-nav li a:not(.active){
-  color:#fff !important;
-  }
+nav .navbar-nav li a:not(.active) {
+  color: #fff !important;
+}
 
-nav .navbar-nav li a:not(.active):hover{
-     color:#F3A739  !important;
-  }
+nav .navbar-nav li a:not(.active):hover {
+  color: #f3a739 !important;
+}
 
 .navbar-nav :nth-child(2) {
-    margin: auto 1rem !important;
+  margin: auto 1rem !important;
 }
-.futures{
+.futures {
   display: flex;
   justify-content: space-around;
   padding: 3rem 3rem;
@@ -67,7 +67,7 @@ nav .navbar-nav li a:not(.active):hover{
   left: 15%; */
 }
 .futures div {
-  background-color: #6FC172;
+  background-color: #6fc172;
   border-radius: 50%;
   height: 9rem;
   font-size: 1.2rem;
@@ -75,99 +75,99 @@ nav .navbar-nav li a:not(.active):hover{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
+
   color: #fff;
 }
-.futures > :first-child{
-  border: 1rem solid #E44C32;
+.futures > :first-child {
+  border: 1rem solid #e44c32;
 }
-.futures > :nth-child(2){
-  border: 1rem solid #8C2E91;
+.futures > :nth-child(2) {
+  border: 1rem solid #8c2e91;
 }
-.futures > :nth-child(3){
-  border: 1rem solid #F3A739;
+.futures > :nth-child(3) {
+  border: 1rem solid #f3a739;
 }
-.futures > :nth-child(4){
-  border: 1rem solid #B6CB40;
+.futures > :nth-child(4) {
+  border: 1rem solid #b6cb40;
 }
-.futures p{
+.futures p {
   font-size: 1.5rem;
 }
-.item{
+.item {
   /* line-height: 3.8rem; */
-  font-weight:700;
+  font-weight: 700;
 }
 @media screen and (max-width: 992px) {
-    .navbar-toggler-ico{
-      color: #F3A739 !important;
-      box-shadow: none;
-    }
-    .navbar-toggler{
-      border-color: #F3A739 !important;
-    }
-   
-    nav .active{
-      border: none;
-    }
-    .navbar-nav :nth-child(2) {
-      margin: 0 !important;
+  .navbar-toggler-ico {
+    color: #f3a739 !important;
+    box-shadow: none;
   }
-  }
-  @media screen and (max-width: 768px) {
-    h1{
-      font-size: 2.8rem;
-    }
-    h2{
-      font-size: 1.8rem;
-    }
-    .pro-img{
-      width: 20rem;
-      margin-top: 3rem;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    h1{
-      font-size: 2.4rem;
-      text-align: center;
-    }
-    h2{
-      font-size: 1.4rem;
-      text-align: center;
-    }
-    .pro-img{
-      margin-top: 2rem;
-    }
-    .logo{
-      width: 10rem;
-    }
-    .navbar-toggler{
-      text-align: center;
-    }
+  .navbar-toggler {
+    border-color: #f3a739 !important;
   }
 
- /* ------------------------------ gallery ------------------------------- */
- .main-gallery{
+  nav .active {
+    border: none;
+  }
+  .navbar-nav :nth-child(2) {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .pro-img {
+    width: 20rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .pro-img {
+    margin-top: 2rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .navbar-toggler {
+    text-align: center;
+  }
+}
+
+/* ------------------------------ gallery ------------------------------- */
+.main-gallery {
   background-image: url(./images/101-1017513_back-gallery-for-children-wallpaper-background-childrens-day.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 2rem;
- }
- .gallery-img{
-   opacity: 0.95;
- }
- .gallery-img:hover{
-   cursor: pointer;
- }
-#gallery-modal .modal-img{
+}
+.gallery-img {
+  opacity: 0.95;
+}
+.gallery-img:hover {
+  cursor: pointer;
+}
+#gallery-modal .modal-img {
   width: 100%;
 }
 /* ---------------------------------edu------------------------------------- */
-.edu-img{
+.edu-img {
   border-radius: 15px;
 }
-.edu-img:hover{
+.edu-img:hover {
   cursor: pointer;
 }
 /* .card {
@@ -210,11 +210,10 @@ input[type="checkbox"]:checked + .card-container .card-flip {
   transform: rotateY(180deg);
 }
 
-section
-{
+section {
   z-index: 100;
 }
-.modal-overlay-edu{
+.modal-overlay-edu {
   display: block;
   position: fixed;
   z-index: 1000;
@@ -223,22 +222,22 @@ section
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.modal-content-edu{
+.modal-content-edu {
   background-color: #f4f4f4;
   margin: 10% auto;
   width: 70%;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   padding: 3rem 10rem;
 }
-.modal-footer{
+.modal-footer {
   justify-content: center !important;
 }
-.message{
+.message {
   display: none;
-  color:rgb(165, 35, 35);
+  color: rgb(165, 35, 35);
   font-size: 0.8rem;
 }
