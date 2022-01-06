@@ -1,5 +1,5 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+* {
+  box-sizing: border-box;
 }
 .navbar-collapse {
   flex-grow: unset !important;
