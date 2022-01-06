@@ -156,6 +156,8 @@ nav .navbar-nav li a:not(.active):hover {
 }
 .gallery-img {
   opacity: 0.95;
+  height: 300px;
+  width: 100%;
 }
 .gallery-img:hover {
   cursor: pointer;
