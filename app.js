@@ -1,18 +1,3 @@
-// $('.btn').click(function(){
-//     $(this).toggleClass("click");
-//     $('.sidebar').toggleClass("show");
-//     });
-
-//     $('.sidebar ul li a').click(function(){
-//     var id = $(this).attr('id');
-//     $('nav ul li ul.item-show-'+id).toggleClass("show");
-//     $('nav ul li #'+id+' span').toggleClass("rotate");
-
-//     });
-
-//     $('nav ul li').click(function(){
-//     $(this).addClass("active").siblings().removeClass("active");
-//     });
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("gallery-img")) {
     const src = e.target.getAttribute("src");
@@ -28,6 +13,7 @@ const accessCode = 123456;
 const form = document.getElementById("form");
 const personalTitle = document.getElementById("personal-title");
 const cards = document.querySelectorAll(".edu-img");
+const scrollBtn = document.getElementById("scroll-top");
 
 window.addEventListener("load", function () {
   if (document.cookie) {
@@ -38,6 +24,14 @@ window.addEventListener("load", function () {
   }
 });
 
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("is-visible");
+  } else {
+    scrollBtn.classList.remove("is-visible");
+  }
+});
+console.log(window.scrollY);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const inputCode = document.getElementById("inputCode").value;
@@ -60,3 +54,6 @@ for (let i = 0; i < cards.length; i++) {
     audio.play();
   });
 }
+scrollBtn.addEventListener("click", function () {
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
+});
