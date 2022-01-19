@@ -1,13 +1,93 @@
 * {
   box-sizing: border-box;
 }
-.navbar-collapse {
+/* .navbar-collapse {
   flex-grow: unset !important;
-}
+} */
 .font {
   font-family: "Bubblegum Sans", cursive;
 }
-.main {
+section {
+  margin: auto 17.3rem;
+}
+#top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 8.5rem;
+}
+#top-menu :nth-child(2) a {
+  color: #8c2e91;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.logo-img {
+  width: 239px;
+  height: 64px;
+}
+#buy-btn {
+  color: #ffffff;
+  border: none;
+  background-color: #8c2e91;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  margin-left: 2rem;
+}
+#first-part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13rem;
+  /* align-items: center; */
+}
+.first-part-text {
+  color: #8c2e91;
+  font-size: 1.4rem;
+}
+.title {
+  font-weight: bolder;
+  color: #84be7a;
+  margin-top: 2rem;
+  line-height: 4rem;
+}
+.pro-img {
+  width: 33.5rem;
+}
+#second-part {
+  margin-top: 8.5rem;
+  background-color: #e44c32;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  padding: 5rem;
+  width: auto;
+  flex-wrap: wrap;
+}
+.item-img {
+  width: 5.7rem;
+}
+.item-img-ex {
+  width: 7.7rem;
+}
+.fu-item {
+  text-align: center;
+}
+.fu-item p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+#part-three {
+  margin: 8rem 39rem;
+  text-align: center;
+  color: #84be7a;
+  font-size: 1.4rem;
+}
+footer {
+  background-color: #76c8da;
+  padding: 5rem 17.3rem;
+}
+/* .main {
   background-image: url(./images/101-1017513_back-gallery-for-children-wallpaper-background-childrens-day.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -27,18 +107,14 @@ nav .active {
 nav {
   background-color: rgba(66, 71, 139, 0.6) !important;
   z-index: 1000;
-}
+} */
 h1 {
-  font-size: 3.3rem;
+  font-size: 4.2rem;
 }
 p {
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
-.pro-img {
-  border-radius: 50%;
-  width: 25rem;
-  border: 2rem solid #9df7f8;
-}
+
 .content {
   display: flex;
   flex-direction: column;
