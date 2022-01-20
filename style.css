@@ -24,7 +24,7 @@ section {
 }
 .logo-img {
   width: 239px;
-  height: 64px;
+  /* height: 64px; */
 }
 #buy-btn {
   color: #ffffff;
@@ -80,14 +80,14 @@ section {
   font-size: 1.4rem;
 }
 #part-three {
-  margin: 8rem 39rem;
+  margin: 8rem 33%;
   text-align: center;
   color: #84be7a;
   font-size: 1.4rem;
 }
 footer {
   background-color: #76c8da;
-  padding: 3rem 17.3rem;
+  padding: 3rem 3.3rem;
   display: flex;
   justify-content: space-around;
   color: #fff;
@@ -104,109 +104,167 @@ footer {
 h1 {
   font-size: 4.2rem;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: max-content;
-}
-nav .navbar-nav li a:not(.active) {
-  color: #fff !important;
-}
 
-nav .navbar-nav li a:not(.active):hover {
-  color: #f3a739 !important;
+@media screen and (max-width: 1400px) {
+  section {
+    margin: auto 10rem;
+  }
+  footer {
+    justify-content: space-between;
+    padding: 3rem 12.3rem;
+  }
+  #second-part {
+    padding: 4.5rem;
+  }
+  #part-three {
+    margin: 8rem 25%;
+  }
 }
-
-.navbar-nav :nth-child(2) {
-  margin: auto 1rem !important;
-}
-.futures {
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 3rem;
-  margin-top: 5rem;
-  text-align: center;
-  /* position: absolute;
-  bottom: 2rem;
-  left: 15%; */
-}
-.futures div {
-  background-color: #6fc172;
-  border-radius: 50%;
-  height: 9rem;
-  font-size: 1.2rem;
-  width: 9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  color: #fff;
-}
-.futures > :first-child {
-  border: 1rem solid #e44c32;
-}
-.futures > :nth-child(2) {
-  border: 1rem solid #8c2e91;
-}
-.futures > :nth-child(3) {
-  border: 1rem solid #f3a739;
-}
-.futures > :nth-child(4) {
-  border: 1rem solid #b6cb40;
-}
-.futures p {
-  font-size: 1.5rem;
-}
-.item {
-  /* line-height: 3.8rem; */
-  font-weight: 700;
+@media screen and (max-width: 1200px) {
+  #top-menu {
+    margin: 1.5rem 6rem;
+  }
+  section {
+    margin: auto 8.5rem;
+  }
+  .title {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+  #first-part {
+    margin-top: 10rem;
+  }
+  .first-part-text {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 992px) {
-  .navbar-toggler-ico {
-    color: #f3a739 !important;
-    box-shadow: none;
+  #top-menu {
+    margin: 1.5rem 4.5rem;
   }
-  .navbar-toggler {
-    border-color: #f3a739 !important;
+  section {
+    margin: auto 4.5rem;
   }
-
-  nav .active {
-    border: none;
+  .title {
+    margin-top: 0.5rem;
+    font-size: 4rem;
   }
-  .navbar-nav :nth-child(2) {
-    margin: 0 !important;
+  #first-part {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+  .first-part-text {
+    font-size: 1.2rem;
+  }
+  #buy-btn {
+    font-size: 1.1rem;
+  }
+  .pro-img-parent {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .fu-item p {
+    font-size: 1.2rem;
+  }
+  #second-part {
+    margin-top: 6rem;
+  }
+  #part-three {
+    margin: 6rem 20%;
+  }
+  footer {
+    padding: 2.5rem 7.3rem;
   }
 }
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.8rem;
+  #top-menu {
+    margin: 1.5rem 2.5rem;
   }
-  h2 {
-    font-size: 1.8rem;
+  section {
+    margin: auto 4.5rem;
   }
-  .pro-img {
-    width: 20rem;
-    margin-top: 3rem;
+  .title {
+    margin-top: 0.5rem;
+    font-size: 4rem;
+  }
+  #first-part {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+  .first-part-text {
+    font-size: 1.2rem;
+  }
+  #buy-btn {
+    font-size: 1.1rem;
+  }
+  .pro-img-parent {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #second-part {
+    padding: 1.5rem;
+  }
+  .item-img {
+    width: 4.5rem;
+  }
+  .item-img-ex {
+    width: 6.1rem;
+  }
+  .fu-item p {
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 2.4rem;
+@media screen and (max-width: 660px) {
+  .logo-img {
+    width: 170px;
+  }
+  footer {
+    padding: 3rem 4.3rem;
+  }
+  .fu-item p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 582px) {
+  #top-menu {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    flex-direction: column;
+  }
+  #top-menu :first-child {
+    margin-bottom: 0.8rem;
+  }
+  section {
+    margin: auto 2.5rem;
+  }
+  .title {
+    margin-top: 0.5rem;
+    font-size: 3.6rem;
+  }
+  #first-part {
+    margin-top: 1.5rem;
+  }
+  footer {
+    flex-direction: column;
     text-align: center;
   }
-  h2 {
-    font-size: 1.4rem;
+  #part-three {
+    margin: 4.5rem 10%;
+  }
+  #second-part {
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 3rem;
+  }
+  #top-menu :nth-child(2) {
     text-align: center;
   }
-  .pro-img {
-    margin-top: 2rem;
-  }
-  .logo {
-    width: 10rem;
-  }
-  .navbar-toggler {
-    text-align: center;
+  #buy-btn {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
