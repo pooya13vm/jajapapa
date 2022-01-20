@@ -267,48 +267,19 @@ h1 {
     margin-top: 0.5rem;
   }
 }
-
-/* ------------------------------ gallery ------------------------------- */
-.main-gallery {
-  background-image: url(./images/101-1017513_back-gallery-for-children-wallpaper-background-childrens-day.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 2rem;
-}
-.gallery-img {
-  opacity: 0.95;
-  height: 300px;
-  width: 100%;
-}
-.gallery-img:hover {
-  cursor: pointer;
-}
-#gallery-modal .modal-img {
-  width: 100%;
-}
 /* ---------------------------------edu------------------------------------- */
+.modal-body a {
+  color: #76c8da;
+}
 .edu-img {
   border-radius: 15px;
 }
 .edu-img:hover {
   cursor: pointer;
 }
-/* .card {
-  width: 82%;
-} */
-
 input[type="checkbox"] {
   display: none;
 }
-
-/* Flip Cards CSS */
-/* .card-container {
-  display: grid;
-  perspective: 700px;
-} */
-
 .card-flip {
   display: grid;
   grid-template: 1fr / 1fr;
@@ -381,4 +352,38 @@ section {
 .is-visible {
   display: block !important;
   opacity: 1 !important;
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+  .modal-content-edu {
+    padding: 3rem 5.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .modal-content-edu {
+    padding: 2.5rem 3rem;
+  }
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content-edu {
+    padding: 2rem 2rem;
+  }
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 582px) {
+  .modal-content-edu {
+    width: 85%;
+  }
+  .title .font {
+    font-size: 3.5rem;
+  }
+  .title h3 {
+    font-size: 2rem !important;
+  }
 }
