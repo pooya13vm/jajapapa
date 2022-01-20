@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
 }
-/* .navbar-collapse {
-  flex-grow: unset !important;
-} */
+a {
+  color: white;
+  text-decoration: none;
+}
 .font {
   font-family: "Bubblegum Sans", cursive;
 }
@@ -32,6 +33,7 @@ section {
   border-radius: 1rem;
   padding: 0.3rem 1rem;
   margin-left: 2rem;
+  font-size: 1.2rem;
 }
 #first-part {
   display: flex;
@@ -85,36 +87,23 @@ section {
 }
 footer {
   background-color: #76c8da;
-  padding: 5rem 17.3rem;
+  padding: 3rem 17.3rem;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 1.2rem;
 }
-/* .main {
-  background-image: url(./images/101-1017513_back-gallery-for-children-wallpaper-background-childrens-day.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-  resize: both;
-  height: 100vh;
+.footer-socials i {
+  font-size: 2rem;
+  margin: 1.5rem;
 }
-nav .active {
-  color: #f3a739 !important;
-  font-weight: bold;
-  padding: 5px;
-  border: solid 1px #f3a739;
-  border-radius: 5px;
+.footer-socials i:nth-of-type(1) {
+  margin-left: 0 !important;
 }
-nav {
-  background-color: rgba(66, 71, 139, 0.6) !important;
-  z-index: 1000;
-} */
+
 h1 {
   font-size: 4.2rem;
 }
-p {
-  /* margin: 0 !important; */
-}
-
 .content {
   display: flex;
   flex-direction: column;
