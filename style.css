@@ -25,7 +25,8 @@ section {
 .logo-img {
   width: 239px;
 }
-#buy-btn {
+#buy-btn,
+#buy-btn2 {
   color: #ffffff;
   border: none;
   background-color: #8c2e91;
@@ -154,7 +155,8 @@ h1 {
   .first-part-text {
     font-size: 1.2rem;
   }
-  #buy-btn {
+  #buy-btn,
+  #buy-btn2 {
     font-size: 1.1rem;
   }
   .pro-img-parent {
@@ -192,7 +194,8 @@ h1 {
   .first-part-text {
     font-size: 1.2rem;
   }
-  #buy-btn {
+  #buy-btn,
+  #buy-btn2 {
     font-size: 1.1rem;
   }
   .pro-img-parent {
@@ -259,7 +262,8 @@ h1 {
   #top-menu :nth-child(2) {
     text-align: center;
   }
-  #buy-btn {
+  #buy-btn,
+  #buy-btn2 {
     font-size: 1rem;
     margin-left: 0;
     margin-top: 0.5rem;
