@@ -50,7 +50,7 @@ form.addEventListener("submit", function (e) {
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", function (e) {
     let alphabet = e.target.getAttribute("data-pro");
-    const audio = new Audio(`./audio/${alphabet}.m4a`);
+    const audio = new Audio(`./mp4/${alphabet}.mp4`);
     audio.play();
   });
 }
