@@ -1,14 +1,3 @@
-document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("gallery-img")) {
-    const src = e.target.getAttribute("src");
-    document.querySelector(".modal-img").src = src;
-    const myModal = new bootstrap.Modal(
-      document.getElementById("gallery-modal")
-    );
-    myModal.show();
-  }
-});
-
 const form = document.getElementById("form");
 const personalTitle = document.getElementById("personal-title");
 const cards = document.querySelectorAll(".edu-img");

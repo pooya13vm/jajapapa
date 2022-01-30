@@ -24,7 +24,6 @@ section {
 }
 .logo-img {
   width: 239px;
-  /* height: 64px; */
 }
 #buy-btn {
   color: #ffffff;
@@ -39,7 +38,6 @@ section {
   display: flex;
   justify-content: space-between;
   margin-top: 13rem;
-  /* align-items: center; */
 }
 .first-part-text {
   color: #8c2e91;
