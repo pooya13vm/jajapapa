@@ -6,7 +6,9 @@ const scrollBtn = document.getElementById("scroll-top");
 window.addEventListener("load", function () {
   if (document.cookie.includes("name")) {
     document.querySelector(".modal-overlay-edu").style.display = "none";
-    let myCookie = document.cookie;
+    let myCookies = document.cookie.padStart("name");
+    let indexOfLastChar = myCookies.indexOf(";");
+    let myCookie = myCookies.slice(0, indexOfLastChar);
     let name = myCookie.slice(5, myCookie.length);
     personalTitle.innerHTML = `Hi ${name}`;
   }
