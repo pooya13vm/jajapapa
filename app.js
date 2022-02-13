@@ -4,7 +4,7 @@ const cards = document.querySelectorAll(".edu-img");
 const scrollBtn = document.getElementById("scroll-top");
 
 window.addEventListener("load", function () {
-  if (document.cookie) {
+  if (document.cookie.includes("name")) {
     document.querySelector(".modal-overlay-edu").style.display = "none";
     let myCookie = document.cookie;
     let name = myCookie.slice(5, myCookie.length);
@@ -30,7 +30,6 @@ form.addEventListener("submit", function (e) {
     document.querySelector(".modal-overlay").style.display = "none";
     personalTitle.innerHTML = `Hi ${inputName}`;
     document.cookie = `name=${inputName};Secure`;
-    console.log(document.cookie);
   } else {
     message.style.display = "block";
   }
