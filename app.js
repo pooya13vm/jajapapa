@@ -14,6 +14,7 @@ const getNameFromCookie = () => {
     return myCookie.slice(5, myCookie.length);
   }
 };
+console.log("changed");
 
 window.addEventListener("load", function () {
   if (document.cookie.includes("name")) {
