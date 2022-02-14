@@ -4,7 +4,7 @@ const cards = document.querySelectorAll(".edu-img");
 const scrollBtn = document.getElementById("scroll-top");
 
 const getNameFromCookie = () => {
-  let cookie = document.cookie;
+  let cookie = document.cookie + ";";
   console.log("cookie", cookie);
   let indexOfName = cookie.indexOf("name");
   console.log("name index", indexOfName);
