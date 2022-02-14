@@ -3,13 +3,22 @@ const personalTitle = document.getElementById("personal-title");
 const cards = document.querySelectorAll(".edu-img");
 const scrollBtn = document.getElementById("scroll-top");
 
+const getNameFromCookie = () => {
+  let cookie = document.cookie;
+  let indexOfName = cookie.indexOf("name");
+  let indexOfFirstChar = cookie.indexOf(";", indexOfName);
+  if (indexOfFirstChar == -1) {
+    return cookie.slice(5, cookie.length);
+  } else {
+    let myCookie = cookie.slice(indexOfName, indexOfFirstChar);
+    return myCookie.slice(5, myCookie.length);
+  }
+};
+
 window.addEventListener("load", function () {
   if (document.cookie.includes("name")) {
     document.querySelector(".modal-overlay-edu").style.display = "none";
-    let myCookies = document.cookie.padStart("name");
-    let indexOfLastChar = myCookies.indexOf(";");
-    let myCookie = myCookies.slice(0, indexOfLastChar);
-    let name = myCookie.slice(5, myCookie.length);
+    let name = getNameFromCookie();
     personalTitle.innerHTML = `Hi ${name}`;
   }
 });
