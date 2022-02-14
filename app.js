@@ -5,10 +5,11 @@ const scrollBtn = document.getElementById("scroll-top");
 
 const getNameFromCookie = () => {
   let cookie = document.cookie;
+  console.log("cookie", cookie);
   let indexOfName = cookie.indexOf("name");
-  console.log(indexOfName);
+  console.log("name index", indexOfName);
   let indexOfFirstChar = cookie.indexOf(";", indexOfName);
-  console.log(indexOfFirstChar);
+  console.log("; index", indexOfFirstChar);
   if (indexOfFirstChar == -1) {
     return cookie.slice(5, cookie.length);
   } else {
