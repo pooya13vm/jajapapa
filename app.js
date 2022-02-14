@@ -6,11 +6,14 @@ const scrollBtn = document.getElementById("scroll-top");
 const getNameFromCookie = () => {
   let cookie = document.cookie;
   let indexOfName = cookie.indexOf("name");
+  console.log(indexOfName);
   let indexOfFirstChar = cookie.indexOf(";", indexOfName);
+  console.log(indexOfFirstChar);
   if (indexOfFirstChar == -1) {
     return cookie.slice(5, cookie.length);
   } else {
     let myCookie = cookie.slice(indexOfName, indexOfFirstChar);
+    console.log(myCookie);
     return myCookie.slice(5, myCookie.length);
   }
 };
