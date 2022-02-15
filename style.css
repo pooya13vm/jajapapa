@@ -43,6 +43,7 @@ section {
 .first-part-text {
   color: #8c2e91;
   font-size: 1.4rem;
+  padding-right: 2rem;
 }
 .title {
   font-weight: bolder;
