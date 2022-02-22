@@ -378,9 +378,9 @@ section {
   .modal-body p {
     font-size: 1rem;
   }
-  .card {
+  .card img {
     /* border: none !important; */
-    max-height: fit-content !important;
+    max-height: 273px !important;
   }
 }
 @media screen and (max-width: 582px) {
