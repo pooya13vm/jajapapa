@@ -380,7 +380,7 @@ section {
   }
   .back img {
     /* border: none !important; */
-    max-height: fit-content !important;
+    max-height: 390px !important;
   }
 }
 @media screen and (max-width: 582px) {
