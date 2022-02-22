@@ -104,10 +104,6 @@ footer {
 h1 {
   font-size: 4.2rem;
 }
-.card {
-  border: none !important;
-  max-height: fit-content !important;
-}
 
 @media screen and (max-width: 1400px) {
   section {
@@ -381,6 +377,10 @@ section {
   }
   .modal-body p {
     font-size: 1rem;
+  }
+  .card {
+    /* border: none !important; */
+    max-height: fit-content !important;
   }
 }
 @media screen and (max-width: 582px) {
