@@ -30,6 +30,13 @@ window.addEventListener("scroll", function () {
     scrollBtn.classList.remove("is-visible");
   }
 });
+function setExpireDay() {
+  var date = new Date();
+  date.setTime(date.getTime() + 1500 * 24 * 60 * 60 * 1000);
+  return date.toUTCString();
+}
+let time = setExpireDay();
+console.log(time);
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -40,7 +47,7 @@ form.addEventListener("submit", function (e) {
   if (checker || document.cookie) {
     document.querySelector(".modal-overlay").style.display = "none";
     personalTitle.innerHTML = `Hi ${inputName}`;
-    document.cookie = `name=${inputName};Secure`;
+    document.cookie = `name=${inputName};expires=${setExpireDay()};Secure;path=/`;
   } else {
     message.style.display = "block";
   }
