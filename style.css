@@ -271,6 +271,9 @@ h1 {
   }
 }
 /* ---------------------------------edu------------------------------------- */
+.card {
+  border: none !important;
+}
 .modal-body a {
   color: #76c8da;
 }
@@ -379,7 +382,6 @@ section {
     font-size: 1rem;
   }
   .back img {
-    border: none !important;
     max-height: 430px !important;
   }
 }
